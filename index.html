@@ -28,6 +28,8 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
+            <li><a href="#modal-perguntas" data-toggle="modal">Perguntas frequentes</a></li>
+
             <li data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Gostamos de conversar!">
               <a href="#modal-contato" data-toggle="modal">Entre em contato</a>
             </li>
@@ -108,17 +110,17 @@
 
     </div>
 
-    <div class="modal fade" id="modal-sobre" tabindex="-1" role="dialog" aria-labelledby="modal-label">
+    <div class="modal fade" id="modal-sobre" tabindex="-1" role="dialog" aria-labelledby="modal-label-quem">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="modal-label">O que somos?</h4>
+            <h4 class="modal-title" id="modal-label-quem">O que somos?</h4>
           </div>
           <div class="modal-body">
             <p>Melhor Negócio é uma loja revolucionária. Nos baseamos nas relações humanas para conectar vendedores e clientes. Nosso maior objetivo é satisfazer você, cliente.</p>
-            <p>Nossa inspiração vem de um dos problemas das lojas online atuais: <i>robôs</i>. <b>Até então</b> não conseguíamos pechinchar, <i>falar</i> com pessoas de verdade.</p>
-            <p>Aqui, você pode praticar a arte da negociação, essa etapa maravilhosa de uma venda, que possibilita a maior satisfação do cliente.</p>
+            <p>Nossa inspiração vem de um dos problemas das lojas online atuais: <i>robôs</i>. <b>Até então</b> não conseguíamos pechinchar e <i>falar</i> com pessoas de verdade.</p>
+            <p>Nós acreditamos que a negociação é uma etapa importante não só no processo de compra como também para a vida em sociedade, ajudando as pessoas a fazerem melhores negócios.</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
@@ -127,40 +129,56 @@
       </div>
     </div>
 
-    <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="modal-label">
+    <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="modal-label-contato">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="modal-label">Entre em contato</h4>
+            <h4 class="modal-title" id="modal-label-contato">Entre em contato</h4>
           </div>
 
-          <form action="index.html" method="post">
-            <div class="modal-body">
-              <p>Gostamos de manter uma boa relação. <i>Networking é bom para todos.</i></p>
-              <p>Fale com a gente, tire suas dúvidas.</p>
+          <div class="modal-body">
+            <p>Gostamos de manter uma boa relação. <i>Networking é bom para todos.</i></p>
+            <p>Fale com a gente, tire suas dúvidas.</p>
 
-              <div class="form-group">
-                <label for="name">Nome: </label>
-                <input type="text" name="name" name="name" class="form-control" placeholder="Ex.: João da Silva">
-              </div>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJWmGwe-44nf-CzNbarjrPxmWetkG29yaRNZ2AsaazHBzWuw/viewform?embedded=true" width="558" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
-              <div class="form-group">
-                <label for="email">E-mail: </label>
-                <input type="text" name="email" name="email" class="form-control" placeholder="Ex.: joaodasilva@gmail.com">
-              </div>
+          </div>
 
-              <div class="form-group">
-                <label for="phone">Telefone: </label>
-                <input type="tel" name="phone" name="phone" class="form-control" placeholder="Ex.: joaodasilva@gmail.com">
-              </div>
+        </div>
+      </div>
+    </div>
 
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-              <button type="submit" class="btn btn-primary">Enviar mensagem</button>
-            </div>
-          </form>
+    <div class="modal fade" id="modal-perguntas" tabindex="-1" role="dialog" aria-labelledby="modal-label-perguntas">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="modal-label-perguntas">Perguntas frequentes</h4>
+          </div>
+
+          <div class="modal-body">
+            <p>Talvez alguma de suas dúvidas já tenha sido respondida. Confira:</p>
+
+            <ul>
+              <li>
+                <h4 style=" margin-bottom: 0; ">Vocês só tem um produto?</h4>
+                <p class="text-primary">Sim, no momento estamos começando e só temos esse produto.</p>
+              </li>
+              <li>
+                <h4 style=" margin-bottom: 0; ">Como ocorre o pagamento?</h4>
+                <p class="text-primary">O pagamento poderá ser feito em dinheiro, no ato da entrega, ou em qualquer meio (cartão, boleto, etc) conforme combinado com o vendedor pelo chat ou qualquer outra forma de contato.</p>
+              </li>
+              <li>
+                <h4 style=" margin-bottom: 0; ">Como ocorre a entrega?</h4>
+                <p class="text-primary">O produto será entregue em sua casa, conforme combinado com o vendedor pelo chat ou qualquer outra forma de contato.</p>
+              </li>
+            </ul>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
 
         </div>
       </div>
