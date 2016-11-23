@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Loja</title>
 
-    <link href="./public/bootstrap.min.css" rel="stylesheet">
+    <link href="./public/css/bootstrap.min.css" rel="stylesheet">
 
   </head>
   <body>
@@ -43,14 +43,60 @@
 
       <div class="row">
 
-        <div class="col-xs-12 col-sm-5">
-          Aquie
+        <div class="col-xs-12 col-sm-6">
+
+          <div id="carousel-product" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-product" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-product" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="public/images/1/melancia-1-min.jpg" alt="Melancias">
+              </div>
+              <div class="item">
+                <img src="public/images/1/melancia-2-min.jpg" alt="Melancia cortada ao meio">
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-product" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-product" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Próxima</span>
+            </a>
+          </div>
+
         </div>
 
-        <div class="col-xs-12 col-sm-7">
+        <div class="col-xs-12 col-sm-6">
           <h2>Deliciosas melancias</h2>
 
-          
+          <p>Melancias vindas de Dourados/Mato Grosso do Sul. Bem vermelhas e doçura incomparável.</p>
+          <p>Muitas unidades disponíveis.</p>
+
+          <h2>
+            <span class="text-success">R$13</span>
+            <sup><small>,00</small></sup>
+            <sub><small class="text-primary">/unidade</small></sub>
+          </h2>
+          <p class="text-muted">Aproximadamente R$1,00 por quilo.</p>
+
+          <div class="row">
+
+            <div class="col-sm-6">
+              <button type="button" class="btn btn-primary btn-lg btn-block">Vamos negociar!</button>
+            </div>
+
+          </div>
+
+          <br>
           <p>Entregas na cidade de Timbó/SC (89120-000) no valor de R$5,00.<br><i>Na compra de duas ou mais unidades, entrega <b>gratuita</b>!</i></p>
         </div>
 
@@ -85,6 +131,9 @@
           </div>
           <div class="modal-body">
             <p>Gostamos de manter uma boa relação. <i>Networking é bom para todos.</i></p>
+            <p>Fale com a gente, tire suas dúvidas.</p>
+
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -96,11 +145,11 @@
 
 
 
-    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./public/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./public/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-    $(document).ready(function(){
-      $("[data-toggle='tooltip']").tooltip();
+    $( document ).ready( function () {
+      $( "[data-toggle='tooltip']" ).tooltip();
     });
     </script>
   </body>
