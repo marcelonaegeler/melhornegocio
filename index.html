@@ -88,10 +88,14 @@
           </h2>
           <p class="text-muted">Aproximadamente R$1,00 por quilo.</p>
 
+          <div class="alert alert-info">
+            Ao clicar em "Vamos negociar" você entrará em contato com uma pessoa de <i>verdade</i> através de um chat. Tire suas <i>dúvidas</i>, peça <i>desconto</i>, <b>negocie</b>!
+          </div>
+
           <div class="row">
 
             <div class="col-sm-6">
-              <button type="button" class="btn btn-primary btn-lg btn-block">Vamos negociar!</button>
+              <a href="javascript:void(Tawk_API.toggle())" class="btn btn-primary btn-lg btn-block">Vamos negociar!</a>
             </div>
 
           </div>
@@ -112,8 +116,9 @@
             <h4 class="modal-title" id="modal-label">O que somos?</h4>
           </div>
           <div class="modal-body">
-            <p>Melhor Negócio é uma loja revolucionária. Nos baseamos nas relações humanas para conectar vendedores e clientes.</p>
-            <p>Nossa inspiração vem de um dos problemas das lojas online atuais: <i>robôs</i>. <b>Até então</b> não conseguíamos pechinchar, pedir descontos, <i>falar</i> com pessoas de verdade.</p>
+            <p>Melhor Negócio é uma loja revolucionária. Nos baseamos nas relações humanas para conectar vendedores e clientes. Nosso maior objetivo é satisfazer você, cliente.</p>
+            <p>Nossa inspiração vem de um dos problemas das lojas online atuais: <i>robôs</i>. <b>Até então</b> não conseguíamos pechinchar, <i>falar</i> com pessoas de verdade.</p>
+            <p>Aqui, você pode praticar a arte da negociação, essa etapa maravilhosa de uma venda, que possibilita a maior satisfação do cliente.</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
@@ -129,16 +134,34 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title" id="modal-label">Entre em contato</h4>
           </div>
-          <div class="modal-body">
-            <p>Gostamos de manter uma boa relação. <i>Networking é bom para todos.</i></p>
-            <p>Fale com a gente, tire suas dúvidas.</p>
 
+          <form action="index.html" method="post">
+            <div class="modal-body">
+              <p>Gostamos de manter uma boa relação. <i>Networking é bom para todos.</i></p>
+              <p>Fale com a gente, tire suas dúvidas.</p>
 
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+              <div class="form-group">
+                <label for="name">Nome: </label>
+                <input type="text" name="name" name="name" class="form-control" placeholder="Ex.: João da Silva">
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mail: </label>
+                <input type="text" name="email" name="email" class="form-control" placeholder="Ex.: joaodasilva@gmail.com">
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Telefone: </label>
+                <input type="tel" name="phone" name="phone" class="form-control" placeholder="Ex.: joaodasilva@gmail.com">
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+              <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+            </div>
+          </form>
+
         </div>
       </div>
     </div>
@@ -152,5 +175,19 @@
       $( "[data-toggle='tooltip']" ).tooltip();
     });
     </script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5835b90973e3d85bf1132478/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
   </body>
 </html>
